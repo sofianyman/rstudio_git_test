@@ -15,3 +15,6 @@ surveys_plot <- ggplot(data = surveys_complete,
 ggplot(data = surveys_complete, mapping = aes(x = species_id, y = weight)) +
   geom_boxplot(alpha = 0) +
   geom_jitter(alpha = 0.3, color = "tomato")
+
+ggplot(data = surveys_complete, mapping = aes(x = species_id, y = weight)) +
+  geom_boxplot()
