@@ -11,8 +11,7 @@ surveys_plot <- ggplot(data = surveys_complete,
                        mapping = aes(x = weight, y = hindfoot_length))
 
 # Draw the plot
-surveys_plot +
-  geom_point()
 
-surveys_plot +
-  geom_point(alpha = 0.1, color = "blue")
+ggplot(data = surveys_complete, mapping = aes(x = species_id, y = weight)) +
+  geom_boxplot(alpha = 0) +
+  geom_jitter(alpha = 0.3, color = "tomato")
