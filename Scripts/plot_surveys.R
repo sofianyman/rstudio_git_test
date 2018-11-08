@@ -13,3 +13,6 @@ surveys_plot <- ggplot(data = surveys_complete,
 # Draw the plot
 surveys_plot +
   geom_point()
+
+surveys_plot +
+  geom_point(alpha = 0.1, color = "blue")
